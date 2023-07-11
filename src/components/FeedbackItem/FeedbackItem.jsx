@@ -4,8 +4,6 @@ import "./FeedbackItem.css";
 const FeedbackItem = () => {
   return (
     <div>
-      <br />
-      <h1>Feedback</h1>
       <div className="feedback-item">
         <div className="feedback-top">
           <div className="feedback-username">
