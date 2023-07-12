@@ -7,8 +7,6 @@ const Feedback = () => {
       <br />
       <h1>Feedback</h1>
       <FeedbackItem />
-      <br></br>
-      <br></br>
       <FeedbackItem />
     </div>
   );
