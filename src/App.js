@@ -28,6 +28,7 @@ function App() {
           <Route path="/complaints" element={<Complaints />} />
           <Route path="/manage" element={<Manage />} />
           <Route path="/feedback" element={<Feedback />} />
+          kpop
         </Routes>
       </div>
     </div>
