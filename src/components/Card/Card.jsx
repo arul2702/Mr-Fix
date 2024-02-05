@@ -18,9 +18,9 @@ function CompactCard({param}){
              boxShadow: param.color.boxShadow,
            }}>
             <div className="detail" >
-                 <span>{param.title} </span>
+                 <span className="card-title">{param.title} </span>
   
-                <span>{param.value}</span>
+                <span className="card-value">{param.value}</span>
                 
             </div>
         </div>

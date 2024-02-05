@@ -1,9 +1,9 @@
 
 .feedback-item{
-    background-color: #fbd0d5;
+    background-color: #fdf2fc;
     width: 57rem;
     height: 10rem;
-    margin-left: 8rem;
+    margin: 20px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -18,19 +18,20 @@
 
 .feedback-top{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: .5rem 1rem 0rem 1rem;
 }
 
 
 .feedback-username{
     background-color: #c37ffb;
     color: white;
-    width:30%;
+    width:8rem;
+    height: 2rem;
     border-radius: 10px;
-}
-
-.feedback-username h3{
-    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feedback-date{
@@ -38,14 +39,12 @@
     color: white;
     width: 30%;
     border-radius: 10px;
-}
-
-.feedback-date h5{
-    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .feedback-text h4{
-    margin-left: 10%;
-    margin-right: 10%;
+   margin: 2rem;
 }
 

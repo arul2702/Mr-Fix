@@ -24,54 +24,54 @@ const makeStyles=(complaintStatus)=>{
   if(complaintStatus==='Completed'){
       return {
         background:'#90EE90',
-        color: 'green',
+        color : 'rgb(12, 49, 12)',
       }
   }
   else if(complaintStatus==='Pending'){
     return {
        background: '#ffadad8f',
-       color: 'red',
+       color:'rgb(106, 11, 11)',
     }
   }
   else{
     return {
       background: 'yellow',
-      color: '#FFA500',
+      color:'rgb(68, 68, 0)' , 
     }
   }
 }
 
 export default function AccessibleTable() {
   return (
-    <div className="Table">
-        <h3>Recent Complaints</h3>
-    <TableContainer component={Paper}
-     style={{boxShadow: '0px 13px 20px 0px #80808029'}}
-    >
-      <Table sx={{ minWidth: 650 }} aria-label="caption table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Complaint Id</TableCell>
-            <TableCell align="left">Date and Time</TableCell>
-            <TableCell align="left">Complaint Desc</TableCell>
-            <TableCell align="left">Complaint Status</TableCell>
+  <div className="table-container">
+  <TableContainer component={Paper} className="table-paper">
+    <Table className="table" aria-label="caption table">
+      <TableHead>
+        <TableRow className='table-header-row'>
+          <TableCell className="table-cell">Complaint Id</TableCell>
+          <TableCell className="table-cell" align="left">Date and Time</TableCell>
+          <TableCell className="table-cell" align="left">Complaint Desc</TableCell>
+          <TableCell className="table-cell" align="left">Complaint Status</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {rows.map((row) => (
+          <TableRow key={row.name} className="table-row">
+            <TableCell component="th" scope="row" className="table-cell">
+              {row.complaintId}
+            </TableCell>
+            <TableCell align="left" className="table-cell">{row.date}</TableCell>
+            <TableCell align="left" className="table-cell">{row.complaintDesc}</TableCell>
+            <TableCell align="left" className="table-cell">
+              <span className='status' style={makeStyles(row.complaintStatus)}>
+                {row.complaintStatus}
+              </span>
+            </TableCell>
           </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
-                {row.complaintId}
-              </TableCell>
-              <TableCell align="left">{row.date}</TableCell>
-              <TableCell align="left">{row.complaintDesc}</TableCell>
-              <TableCell align="left"><span className='status' style={makeStyles(row.complaintStatus)}>{row.complaintStatus}</span></TableCell>
-
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-    </div>
-  );
+        ))}
+      </TableBody>
+    </Table>
+  </TableContainer>
+</div>
+ );
 }

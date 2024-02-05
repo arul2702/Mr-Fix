@@ -1,58 +1,26 @@
 import "./UserProfile.css";
-import proimg from "./noprofil.jpg";
+import proimg from "./prof.jpg";
+import {AiOutlineEdit} from 'react-icons/ai'
+import ProfileBl from "../ProfileBl/ProfileBl"
+import FeedBackForm from "../../FeedBackForm/FeedBackForm";
 
 function UserProfile() {
   return (
-    <div>
-      <h1>Profile</h1>
-      <div className="profile-container">
-        <img
-          src={proimg}
-          alt="profile_pic"
-          className="profile-container-proimg"
-        />
+    <div className="profile-page">
+      <h1 className="page-head">Profile</h1>
+      <div className="profile-top">
+        <img src={proimg} alt="" />
+        <h2 className="profile-name">Gandhi</h2>
+        <span className="profile-id">id : w343dcsx</span>
+        <AiOutlineEdit className="profile-edit"/>
       </div>
-      <br />
-      <div className="edit">
-        <button className="edit-button">Edit</button>
-      </div>
-      <div className="details">
-        <br />
-        <div className="user-id">
-          <h3>User Id</h3>
-          <div className="id">
-            <h4>5445</h4>
-          </div>
+      <div className="profile-bottom">
+        <div className="profile-left">
+          <ProfileBl className="profile-left-tabel"/>
         </div>
-        <br />
-        <div className="user-name">
-          <h3>User Name</h3>
-          <div className="name">
-            <h4>jaya</h4>
-          </div>
+        <div className="profile-right">
+          <FeedBackForm/>
         </div>
-        <br />
-        <div className="e-mail">
-          <h3>E-mail</h3>
-          <div className="mail">
-            <h4>jayasurya123@gmail.com</h4>
-          </div>
-        </div>
-        <br />
-        <div className="password">
-          <h3>Password</h3>
-          <div className="pass">
-            <h4>sece#321</h4>
-          </div>
-        </div>
-        <br />
-        <div className="phone-no">
-          <h3>Phone No</h3>
-          <div className="number">
-            <h4>9360340528</h4>
-          </div>
-        </div>
-        <br />
       </div>
     </div>
   );

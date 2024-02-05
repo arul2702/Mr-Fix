@@ -5,9 +5,10 @@ import { Table } from "@mui/material";
 
 const Manage = () => {
   return (
-    <div>
-      <br />
-      <h1>Manage</h1>
+    <>
+    
+    <div className="manage">
+    <h1 className="page-head">Manage Complaints</h1>
       <div className="container">
         <div className="manage-events">
           <div className="manage-events-button">View All Complaints</div>
@@ -21,6 +22,7 @@ const Manage = () => {
       </div>
       <Table />
     </div>
+    </>
   );
 };
 

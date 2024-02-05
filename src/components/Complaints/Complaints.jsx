@@ -1,17 +1,19 @@
 import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+// import Table from '@mui/material/Table';
+// import TableBody from '@mui/material/TableBody';
+// import TableCell from '@mui/material/TableCell';
+// import TableContainer from '@mui/material/TableContainer';
+// import TableHead from '@mui/material/TableHead';
+// import TableRow from '@mui/material/TableRow';
+// import Paper from '@mui/material/Paper';
 import { nanoid } from 'nanoid';
+import Table from '../Table/Table'
+import '../Complaints/Complaints.css'
 
 const Complaints = () => {
   return (
-    <div className="Table">
-        <h3>Recent Complaints</h3>
+    <div className="complaint-table">
+        {/* <h3>Recent Complaints</h3>
     <TableContainer component={Paper}
      style={{boxShadow: '0px 13px 20px 0px #80808029'}}
     >
@@ -38,7 +40,9 @@ const Complaints = () => {
           ))}
         </TableBody>
       </Table>
-    </TableContainer>
+    </TableContainer> */}
+    <h1 className="page-head">Complaints</h1>
+    <Table/>
     </div>
   );
 }

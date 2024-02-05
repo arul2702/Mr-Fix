@@ -1,12 +1,13 @@
 
-
+.manage{
+    width: 100%;
+    margin: 20px;
+}
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 90px;
-    padding-right: 90px;
-    
+    padding: 10px 20px;    
 }
 
 .manage-events-button{

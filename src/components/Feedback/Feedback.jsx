@@ -1,11 +1,11 @@
 import React from "react";
 import FeedbackItem from "../FeedbackItem/FeedbackItem";
+import './Feedback.css'
 
 const Feedback = () => {
   return (
-    <div>
-      <br />
-      <h1>Feedback</h1>
+    <div className="feedback-page">
+      <h1 className="page-head">Feedback</h1>
       <FeedbackItem />
       <FeedbackItem />
     </div>

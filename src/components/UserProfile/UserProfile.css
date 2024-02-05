@@ -1,119 +1,70 @@
-.profile-container{
+.profile-page{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 20px;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    gap: .5rem;
 }
 
-.profile-container-proimg{
-    
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
-    box-shadow: 5px 5px 40px rgb(70, 56, 56);
-}
-
-.edit{
+.profile-top{
     display: flex;
-    align-items: center;
+    padding:10px 0px ;
     justify-content: center;
-}
-
-.edit-button {
-    padding: 10px 35px;
-    background: rgb(187, 103, 255); 
-    color: #ffffff;
-    border: none;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid gray;
     border-radius: 10px;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 2px 2px  rgb(96, 94, 94);
-  }
-  
-  .edit-button:hover {
-    background-color: rgb(133, 20, 225);
-  }
-  
-.details{
-    background: linear-gradient(rgb(232, 211, 249) 0%, rgb(196, 132, 243) 100%);
+}
+.profile-page img{
+    width: 200px;
+    border-radius: 50%;
+}
+.profile-name{
+    color: #3b4a67;
+    padding: 10px 0px 10px 0px;
+}
+.profile-edit{
+    font-size: 24px;
+    background-color: rgb(51, 197, 51);
     padding: 10px;
-    margin-top:30px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 40px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 40px  rgb(124, 119, 119);
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    top:2rem;
+    right: 2rem;
+    cursor: pointer;
 }
-
-.user-id{
-    background: linear-gradient(rgb(255, 236, 238) 0%, rgb(252, 165, 174) 100%);
-    margin-left: 15px;
-    margin-right: 15px;
+.profile-bottom{
     display: flex;
-    padding-left: 20px;
-    border-radius: 25px;
-    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
+    position: relative;
+    height: 100%;
+    gap: .5rem;
 }
 
-.user-name{
-   
-    background: linear-gradient(rgb(255, 236, 238) 0%, rgb(252, 165, 174) 100%);
-    margin-left: 15px;
-    margin-right: 15px;
+/* bottom left box area */
+
+.profile-left{
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    height: 100%;
     display: flex;
-    padding-left: 20px;
-    border-radius: 25px;
-    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.e-mail{
-    background: linear-gradient(rgb(255, 236, 238) 0%, rgb(252, 165, 174) 100%);
-    margin-left: 15px;
-    margin-right: 15px;
+/* bottom right area */
+
+.profile-right{
+    position: relative;
     display: flex;
-    padding-left: 20px;
-    border-radius: 25px;
-    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
-}
-
-.password{
-    background: linear-gradient(rgb(255, 236, 238) 0%, rgb(252, 165, 174) 100%);
-    margin-left: 15px;
-    margin-right: 15px;
-    display: flex;
-    padding-left: 20px;
-    border-radius: 25px;
-    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
-}
-
-.phone-no{
-    background: linear-gradient(rgb(255, 236, 238) 0%, rgb(252, 165, 174) 100%);
-    margin-left: 15px;
-    margin-right: 15px;
-    display: flex;
-    padding-left: 20px;
-    border-radius: 25px;
-    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
-}
-.id{
-    margin-left: 90px;
-}
-
-.name{
-    margin-left: 56px;
-
-}
-.mail{
-    margin-left: 100px;
-
-}
-
-.pass{
-    margin-left:70px;
-
-
-}
-
-.number{
-    margin-left: 70px;
-
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 100%;
 }
